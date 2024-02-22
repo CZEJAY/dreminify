@@ -1,4 +1,4 @@
-#Dreminify
+#dremify
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -61,8 +61,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/CZEJAY/dreminify.git
-cd dreminify
+git clone https://github.com/CZEJAY/dremify.git
+cd dremify
 ```
 
 **Installation**
@@ -1876,7 +1876,7 @@ export async function getAllImages({ limit = 9, page = 1, searchQuery = '' }: {
       secure: true,
     })
 
-    let expression = 'folder=imaginify';
+    let expression = 'folder=dremify';
 
     if (searchQuery) {
       expression += ` AND ${searchQuery}`

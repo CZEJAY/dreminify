@@ -53,7 +53,7 @@ const MediaUploader = ({
 
   return (
     <CldUploadWidget
-      uploadPreset="ml_default"
+      uploadPreset="JSO_Dremify"
       options={{
         multiple: false,
         resourceType: "image",
