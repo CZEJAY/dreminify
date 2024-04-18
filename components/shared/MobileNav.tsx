@@ -14,12 +14,11 @@ const MobileNav = () => {
   return (
     <header className="header">
       <Link href="/" className="flex items-center gap-2 md:py-2">
-        <Image
-          src="/assets/images/logo-text.svg"
-          alt="logo"
-          width={180}
-          height={28}
-        />
+        <h1 
+        className="font-IBMPlex font-semibold leading-7 text-2xl text-purple-500"
+        >
+          Dremify
+        </h1>
       </Link>
 
       <nav className="flex gap-2">

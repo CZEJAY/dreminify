@@ -31,7 +31,10 @@ const Credits = async () => {
                 <p className="p-20-semibold mt-2 text-purple-500">
                   {plan.name}
                 </p>
-                <p className="h1-semibold text-dark-600">${plan.price}</p>
+                <p className="h1-semibold flex items-center gap-2 text-dark-600">
+                <Image src={"/assets/images/naira.jpeg"} alt="naira" width={50} height={50}/>
+                {plan.price}
+                </p>
                 <p className="p-16-regular">{plan.credits} Credits</p>
               </div>
 

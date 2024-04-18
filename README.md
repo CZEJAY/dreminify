@@ -1,4 +1,4 @@
-#dremify
+# Dremify
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 

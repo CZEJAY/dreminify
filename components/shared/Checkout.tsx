@@ -28,6 +28,12 @@ const Checkout = ({
   useEffect(() => {
     // Check to see if this is a redirect back from Checkout
     const query = new URLSearchParams(window.location.search);
+    toast({
+      title: "Order placed!",
+      description: "You will receive an email confirmation",
+      duration: 5000,
+      className: "success-toast",
+    });
     if (query.get("success")) {
       toast({
         title: "Order placed!",
@@ -55,7 +61,7 @@ const Checkout = ({
       buyerId,
     };
 
-    await checkoutCredits(transaction);
+    // await checkoutCredits(transaction);
   };
 
   return (

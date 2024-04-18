@@ -14,7 +14,11 @@ const Sidebar = () => {
     <aside className="sidebar">
       <div className="flex size-full flex-col gap-4">
         <Link href="/" className="sidebar-logo">
-          <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
+          <h1
+            className="font-IBMPlex font-semibold leading-7 text-2xl text-purple-500"
+          >
+            Dremify
+          </h1>
         </Link>
 
         <nav className="sidebar-nav">
@@ -24,11 +28,10 @@ const Sidebar = () => {
                 const isActive = link.route === pathname
 
                 return (
-                  <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
-                  }`}>
+                  <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                    }`}>
                     <Link className="sidebar-link" href={link.route}>
-                      <Image 
+                      <Image
                         src={link.icon}
                         alt="logo"
                         width={24}
@@ -40,7 +43,7 @@ const Sidebar = () => {
                   </li>
                 )
               })}
-              </ul>
+            </ul>
 
 
             <ul className="sidebar-nav_elements">
@@ -48,11 +51,10 @@ const Sidebar = () => {
                 const isActive = link.route === pathname
 
                 return (
-                  <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
-                  }`}>
+                  <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                    }`}>
                     <Link className="sidebar-link" href={link.route}>
-                      <Image 
+                      <Image
                         src={link.icon}
                         alt="logo"
                         width={24}
